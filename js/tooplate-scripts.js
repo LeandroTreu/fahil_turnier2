@@ -75,13 +75,25 @@ function drawBarChart() {
       scales: {
         yAxes: [
           {
-            barPercentage: 0.2,
+            barPercentage: 0.5,
             ticks: {
               beginAtZero: true
             },
             scaleLabel: {
               display: true,
-              labelString: "Hits"
+              labelString: ""
+            }
+          }
+        ],
+        xAxes: [
+          {
+            barPercentage: 0.5,
+            ticks: {
+              beginAtZero: true
+            },
+            scaleLabel: {
+              display: true,
+              labelString: ""
             }
           }
         ]
@@ -105,14 +117,14 @@ function drawBarChart() {
     configBar = {
       type: "horizontalBar",
       data: {
-        labels: ["Red", "Aqua", "Green", "Yellow", "Purple", "Orange", "Blue"],
+        labels: ["Lele", "Stan", "Paescal", "Fabio", "Raffi"],
         datasets: [
           {
-            label: "# of Hits",
-            data: [33, 40, 28, 49, 58, 38, 44],
+            label: "points",
+            data: [34, 29, 21, 21, 11],  // ranking_points
             backgroundColor: [
-              "#F7604D",
               "#4ED6B8",
+              "#F7604D",
               "#A8D582",
               "#D7D768",
               "#9D66CC",

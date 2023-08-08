@@ -106,7 +106,9 @@
             <div class="row tm-content-row">
                 <div class="col-12 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
-                        <img src="img/ranking.png" alt="ranking"  style="width:100%;">
+                        <!-- <img src="img/ranking.png" alt="ranking"  style="width:100%;"> -->
+                        <h2 class="tm-block-title">Ranking</h2>
+                        <canvas id="barChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -153,25 +155,25 @@
     <script src="js/tooplate-scripts.js"></script>
     <script>
         Chart.defaults.global.defaultFontColor = 'white';
-        let ctxLine,
-            ctxBar,
-            ctxPie,
-            optionsLine,
-            optionsBar,
-            optionsPie,
-            configLine,
-            configBar,
-            configPie,
-            lineChart;
-        barChart, pieChart;
+        // let ctxLine,
+        //     ctxBar,
+        //     ctxPie,
+        //     optionsLine,
+        //     optionsBar,
+        //     optionsPie,
+        //     configLine,
+        //     configBar,
+        //     configPie,
+        //     lineChart;
+        // barChart, pieChart;
         // DOM is ready
         $(function () {
-            drawLineChart(); // Line Chart
+            // drawLineChart(); // Line Chart
             drawBarChart(); // Bar Chart
-            drawPieChart(); // Pie Chart
+            // drawPieChart(); // Pie Chart
 
             $(window).resize(function () {
-                updateLineChart();
+                // updateLineChart();
                 updateBarChart();
             });
         })

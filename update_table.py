@@ -12,7 +12,7 @@ body_lines = []
 # Save the header and body line into lists
 parse_header = False
 parse_body = False
-for line in line_list:
+for index, line in enumerate(line_list):
     
     if "<head>" in line:
         parse_header = True
@@ -43,8 +43,18 @@ for line in line_list:
             header_lines.append(line)
     if parse_body:
         body_lines.append(line)
-    
-    
+
+        if ">Ranking</td>" in line:
+            
+            points_list = []
+            for i in range(5):
+                R_line = line_list[index+i+1]
+                R_line = R_line.split(">")
+                R_line = R_line[1].split("<")
+                points_list.append(int(R_line[0]))
+
+
+points_list = sorted(points_list, reverse=True)
 
 
 line_list = []
@@ -83,4 +93,30 @@ for line in line_list:
 
 with open("index.html", "w", encoding="windows-1252") as file:
     for line in new_line_list:
+        file.write(line)
+
+
+
+
+# Write new ranking points into js file with the bar chart
+
+js_file_list = []
+with open("js/tooplate-scripts.js", "r") as file:
+    for line in file:
+        js_file_list.append(line)
+
+
+split_index = 0
+for index, line in enumerate(js_file_list):
+
+    if "ranking_points" in line:
+
+        split_index = index
+
+# print(js_file_list[split_index])
+
+new_js_file_list = js_file_list[:split_index] + [f"            data: {points_list},  // ranking_points\n"] + js_file_list[split_index+1:]
+
+with open("js/tooplate-scripts.js", "w") as file:
+    for line in new_js_file_list:
         file.write(line)
