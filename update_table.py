@@ -2,7 +2,7 @@ from datetime import datetime
 
 # Read the excel htm file
 line_list = []
-with open("Turnier2_excel.htm", "r", encoding="windows-1252") as file:
+with open("Turnier2.htm", "r", encoding="windows-1252") as file:
     for line in file:
         line_list.append(line)
 

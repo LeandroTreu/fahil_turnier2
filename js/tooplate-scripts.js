@@ -121,7 +121,7 @@ function drawBarChart() {
         datasets: [
           {
             label: "points",
-            data: [34, 29, 21, 21, 11],  // ranking_points
+            data: [34, 31, 21, 21, 11],  // ranking_points
             backgroundColor: [
               "#4ED6B8",
               "#F7604D",

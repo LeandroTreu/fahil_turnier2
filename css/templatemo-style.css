@@ -65,9 +65,9 @@ button:focus {
 }
 .tm-block {
   padding: 40px;
-  -webkit-box-shadow: 1px 1px 5px 0 #455A64;
-  -moz-box-shadow: 1px 1px 5px 0 #455A64;
-  box-shadow: 1px 1px 5px 0 #455A64;
+  /* -webkit-box-shadow: 1px 1px 5px 0 #455A64; */
+  /* -moz-box-shadow: 1px 1px 5px 0 #455A64; */
+  /* box-shadow: 1px 1px 5px 0 #455A64; */
   min-height: 350px;
   height: 100%;
   max-height: 450px;
@@ -226,15 +226,15 @@ thead {
 }
 .moving {
   background-color: #9be64d;
-  box-shadow: 0 0 8px #9be64d, inset 0 0 8px #9be64d;
+  /* box-shadow: 0 0 8px #9be64d, inset 0 0 8px #9be64d; */
 }
 .pending {
   background-color: #efc54b;
-  box-shadow: 0 0 8px #efc54b, inset 0 0 8px #efc54b;
+  /* box-shadow: 0 0 8px #efc54b, inset 0 0 8px #efc54b; */
 }
 .cancelled {
   background-color: #da534f;
-  box-shadow: 0 0 8px #da534f, inset 0 0 8px #da534f;
+  /* box-shadow: 0 0 8px #da534f, inset 0 0 8px #da534f; */
 }
 .tm-avatar {
   width: 345px;
@@ -287,7 +287,7 @@ thead {
   background-color: #60738e;
   color: #fff;
   border-color: transparent;
-  box-shadow: 0 0 0 0.1rem rgb(180, 206, 233, 0.5);
+  /* box-shadow: 0 0 0 0.1rem rgb(180, 206, 233, 0.5); */
 }
 .form-group label {
   color: #fff;
@@ -496,9 +496,9 @@ input[type="checkbox"]:focus {
   background-color: #455A64;
   padding-top: 30px;
   padding-bottom: 30px;
-  -webkit-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
-  -moz-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
-  box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
+  /* -webkit-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59); */
+  /* -moz-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59); */
+  /* box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59); */
 }
 .custom-select {
   height: 50px;
@@ -538,7 +538,7 @@ input[type="checkbox"]:focus {
 }
 .navbar-toggler {
   border-color: #708da8;
-  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px;
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px; */
   border-radius: 0;
   padding: 10px 15px;
   transition: all 0.2s ease;
@@ -607,7 +607,7 @@ input[type="checkbox"]:focus {
   }
   .navbar-collapse {
     padding: 0;
-    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 1px;
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 1px; */
     position: absolute;
     top: 72px;
     right: 20px;
